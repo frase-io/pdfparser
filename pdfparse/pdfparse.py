@@ -9,6 +9,7 @@ import pdftotext as ptt
 class PDFParse(object):
     def __init__(self, file_name):
         self.file = file_name
+        self.images = []
     
     def extract_text(self):
         """
@@ -33,4 +34,11 @@ class PDFParse(object):
             if prefix in f:
                 ret.append(os.path.join("/tmp", f))
 
-        return sorted(ret)
+        self.images = sorted(ret)
+        return self.images
+
+    def delete_images(self):
+        for image in self.images:
+            os.remove(image)
+
+        self.images = []
