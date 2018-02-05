@@ -6,4 +6,4 @@ PDF Parsing Tools
 
 ### Prerequisites
 * Ubuntu
-`sudo apt-get install build-essential libpoppler-cpp-dev pkg-config python-dev`
+    - `sudo apt-get install build-essential libpoppler-cpp-dev pkg-config python-dev`
