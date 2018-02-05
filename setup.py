@@ -13,7 +13,7 @@ class Test(TestCommand):
 
 
 setup(
-    name="pdfparse",
+    name="pdfparser",
     version="1.0.0",
     author="Bryant Moscon",
     author_email="bmoscon@gmail.com",

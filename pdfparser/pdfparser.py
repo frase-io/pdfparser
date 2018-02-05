@@ -6,7 +6,7 @@ import os
 import pdftotext as ptt
 
 
-class PDFParse(object):
+class PDFParser(object):
     def __init__(self, file_name):
         self.file = file_name
         self.images = []
